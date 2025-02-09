@@ -90,6 +90,8 @@
       <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
       <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1566,3440" sap2010:WorkflowViewState.IdRef="Sequence_2">
@@ -165,7 +167,7 @@
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[SalesResults.Sheet(&quot;Arkusz1&quot;)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,235" sap2010:WorkflowViewState.IdRef="AppendRangeX_1" PasteOptions="Values" SourceRange="[SourceExcel.Sheet(&quot;Sheet1&quot;)]" Transpose="False" />
+                                    <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[SalesResults.Sheet(&quot;Arkusz1&quot;)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,235" sap2010:WorkflowViewState.IdRef="AppendRangeX_1" PasteOptions="Values" SourceRange="[SourceExcel.SelectedSheet]" Transpose="False" />
                                   </Sequence>
                                 </ActivityAction>
                               </ueab:ExcelApplicationCard.Body>
